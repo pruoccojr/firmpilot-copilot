@@ -1,18 +1,7 @@
-.env
-.env.*
-!.env.example
-
 # WordPress runtime
 wp-content/uploads/
 wp-content/cache/
 wp-content/upgrade/
-
-# Third-party plugins/themes (only fp-copilot is tracked)
-wp-content/plugins/*
-!wp-content/plugins/fp-copilot/
-!wp-content/plugins/index.php
-wp-content/themes/*
-!wp-content/themes/index.php
 
 # Node
 wp-content/plugins/fp-copilot/node_modules/
