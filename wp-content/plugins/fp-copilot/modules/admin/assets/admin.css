@@ -1,0 +1,126 @@
+.fp-copilot-admin-wrap {
+	margin-top: 12px;
+}
+
+.fp-copilot-admin__boot-message {
+	color: #646970;
+}
+
+.fp-copilot-admin {
+	display: flex;
+	align-items: stretch;
+	min-height: 560px;
+	background: #fff;
+	border: 1px solid #dcdcde;
+	border-radius: 4px;
+	overflow: hidden;
+}
+
+.fp-copilot-admin__sidebar {
+	flex: 0 0 220px;
+	border-right: 1px solid #dcdcde;
+	background: #f6f7f7;
+	padding: 12px 0;
+}
+
+.fp-copilot-admin__nav {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.fp-copilot-admin__nav-item {
+	width: 100%;
+	justify-content: flex-start;
+	border-radius: 0;
+	height: auto;
+	min-height: 40px;
+	padding: 8px 16px !important;
+	text-align: left;
+}
+
+.fp-copilot-admin__nav-item.is-pressed {
+	background: #fff;
+	box-shadow: inset 3px 0 0 #2271b1;
+}
+
+.fp-copilot-admin__content {
+	flex: 1;
+	padding: 24px 32px;
+	min-width: 0;
+}
+
+.fp-copilot-admin__title {
+	margin: 0 0 8px;
+	font-size: 23px;
+	font-weight: 400;
+	line-height: 1.3;
+}
+
+.fp-copilot-admin__description {
+	margin: 0 0 20px;
+	color: #646970;
+}
+
+.fp-copilot-admin__loading {
+	display: flex;
+	justify-content: center;
+	padding: 48px 0;
+}
+
+.fp-copilot-admin__utilities .components-panel {
+	border: 1px solid #dcdcde;
+}
+
+.fp-copilot-admin__placeholder {
+	color: #646970;
+}
+
+.fp-copilot-admin__callout {
+	max-width: 720px;
+	margin-top: 8px;
+	padding: 20px 24px;
+	background: #f0f6fc;
+	border: 1px solid #c3d9ed;
+	border-left: 4px solid #2271b1;
+	border-radius: 4px;
+}
+
+.fp-copilot-admin__callout-title {
+	margin: 0 0 8px;
+	font-size: 16px;
+	font-weight: 600;
+	color: #1d2327;
+}
+
+.fp-copilot-admin__callout-description,
+.fp-copilot-admin__callout-hint {
+	margin: 0 0 16px;
+	color: #50575e;
+}
+
+.fp-copilot-admin__callout-hint {
+	margin-bottom: 0;
+	font-size: 12px;
+}
+
+.fp-copilot-admin__api-key-input {
+	box-sizing: border-box;
+	width: 100%;
+	margin: 0 0 12px;
+	padding: 14px 16px;
+	font-family: Consolas, Monaco, monospace;
+	font-size: 15px;
+	line-height: 1.4;
+	color: #1d2327;
+	background: #fff;
+	border: 1px solid #8c8f94;
+	border-radius: 4px;
+	cursor: pointer;
+}
+
+.fp-copilot-admin__api-key-input:focus {
+	border-color: #2271b1;
+	box-shadow: 0 0 0 1px #2271b1;
+	outline: 2px solid transparent;
+}
