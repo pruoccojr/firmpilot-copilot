@@ -1,0 +1,9 @@
+.fp-block-placeholder {
+	padding: 1.5rem;
+	text-align: center;
+	color: #646970;
+}
+
+.fp-block-placeholder__desc {
+	margin: 0;
+}

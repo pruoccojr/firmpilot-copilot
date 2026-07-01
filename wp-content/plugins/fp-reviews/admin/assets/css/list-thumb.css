@@ -1,0 +1,80 @@
+/*------------------------------------------------------------
+	List table column – thumbnail (Featured Image)
+------------------------------------------------------------*/
+
+.fp-column__thumb {
+	position: relative;
+	display: block;
+	max-width: 3.75rem;
+	max-height: 3.75rem;
+	text-align: center;
+	border-radius: 0.25rem;
+	overflow: visible;
+}
+
+.fp-column__thumb img {
+	max-width: 3.75rem;
+	max-height: 3.75rem;
+	width: auto;
+	height: auto;
+	display: block;
+	border-radius: inherit;
+}
+
+.fp-column__thumb:has(> .dashicons) {
+	padding: 1.25rem;
+	background-color: var(--fp-color-admin--background);
+	border: 1px solid var(--fp-color-admin--border);
+	border-radius: 0.25rem;
+	box-sizing: border-box;
+}
+
+.fp-column__thumb > .dashicons {
+	width: 1.25rem;
+	max-width: 1.25rem;
+	height: 1.25rem;
+	max-height: 1.25rem;
+	color: var(--fp-color-admin--border);
+	font-size: 1.25rem;
+}
+
+/* Remove featured image – visible on hover when thumb exists */
+.column-thumb .fp-column__thumb__remove {
+	position: absolute;
+	top: 0.125rem;
+	right: 0.125rem;
+	z-index: 2;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 1.25rem;
+	height: 1.25rem;
+	padding: 0;
+	margin: 0;
+	border: none;
+	border-radius: 0.125rem;
+	background: var(--fp-color-admin--error);
+	color: var(--fp-color-theme--base);
+	cursor: pointer;
+	opacity: 0;
+	transition: opacity 0.15s ease;
+}
+
+.column-thumb .fp-column__thumb__remove:hover {
+	background: var(--fp-color-admin--error);
+	color: var(--fp-color-theme--base);
+}
+
+.column-thumb .fp-column__thumb:has(img):hover .fp-column__thumb__remove,
+.column-thumb .fp-column__thumb__remove:focus {
+	opacity: 1;
+}
+
+.column-thumb .fp-column__thumb__remove .dashicons {
+	width: 0.875rem;
+	height: 0.875rem;
+	max-width: 0.875rem;
+	max-height: 0.875rem;
+	font-size: 0.875rem;
+	color: inherit;
+}

@@ -1,0 +1,116 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "firmpilot-reviews/reviews",
+	"title": "Reviews for FirmPilot",
+	"description": "Display reviews as grid or carousel, optionally filtered by category.",
+	"category": "widgets",
+	"icon": "format-quote",
+	"keywords": [ "reviews", "category" ],
+	"style": "file:../../../assets/css/styles.css",
+	"supports": {
+		"anchor": true,
+		"customClassName": true,
+		"html": false
+	},
+	"attributes": {
+		"category": {
+			"type": "string",
+			"default": ""
+		},
+		"limit": {
+			"type": "integer",
+			"default": -1
+		},
+		"orderby": {
+			"type": "string",
+			"default": "sort_order"
+		},
+		"order": {
+			"type": "string",
+			"default": "ASC"
+		},
+		"title_element": {
+			"type": "string",
+			"default": "h3"
+		},
+		"grid_style": {
+			"type": "string",
+			"default": "grid"
+		},
+		"layoutDisplay": {
+			"type": "string",
+			"default": "grid"
+		},
+		"columns_desktop": {
+			"type": "integer",
+			"default": 4
+		},
+		"columns_tablet": {
+			"type": "integer",
+			"default": 3
+		},
+		"columns_mobile": {
+			"type": "integer",
+			"default": 2
+		},
+		"column_gap": {
+			"type": "string",
+			"default": "2rem"
+		},
+		"imageShape": {
+			"type": "string",
+			"default": "circle"
+		},
+		"imagePosition": {
+			"type": "string",
+			"default": "top"
+		},
+		"imageSizeRem": {
+			"type": "number",
+			"default": 5
+		},
+		"carouselAutoplayMs": {
+			"type": "number",
+			"default": 0
+		},
+		"carouselPauseOnHover": {
+			"type": "boolean",
+			"default": true
+		},
+		"carouselShowArrows": {
+			"type": "boolean",
+			"default": true
+		},
+		"carouselShowDots": {
+			"type": "boolean",
+			"default": true
+		},
+		"showUserImage": {
+			"type": "boolean",
+			"default": true
+		},
+		"showRating": {
+			"type": "boolean",
+			"default": true
+		},
+		"show_company": {
+			"type": "boolean",
+			"default": true
+		},
+		"show_job_title": {
+			"type": "boolean",
+			"default": true
+		},
+		"show_location": {
+			"type": "boolean",
+			"default": true
+		},
+		"hidePlaceholderImages": {
+			"type": "boolean",
+			"default": false
+		}
+	},
+	"requires": "5.9",
+	"requiresPHP": "7.4"
+}
